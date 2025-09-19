@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Tema base oscuro */
+@layer base {
+	html, body {
+		@apply bg-neutral-950 text-neutral-100 antialiased;
+	}
+}

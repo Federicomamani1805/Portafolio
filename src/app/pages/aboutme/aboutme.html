@@ -1,0 +1,157 @@
+<!-- Portada estilo portafolio -->
+<header class="max-w-4xl mx-auto px-6 pt-10">
+  <div class="flex items-start justify-between gap-6">
+    <div>
+      <h1 class="text-4xl md:text-5xl font-bold tracking-tight">Gabriel Federico Mamani Ubeid</h1>
+      <p class="mt-2 text-xl text-neutral-300">Desarrollador de software</p>
+
+      <div class="mt-4 flex flex-wrap items-center gap-3 text-sm text-neutral-300/80">
+        <!-- Ubicación -->
+        <span class="inline-flex items-center gap-2 rounded-full bg-white/5 ring-1 ring-white/10 px-3 py-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-4 w-4 text-indigo-400">
+            <path fill-rule="evenodd" d="M11.47 3.84a6.75 6.75 0 0 1 6.69 6.69c0 3.58-2.59 6.83-5.02 9.03a3.75 3.75 0 0 1-5.1 0c-2.43-2.2-5.02-5.45-5.02-9.03a6.75 6.75 0 0 1 6.69-6.69Zm0 9.41a2.72 2.72 0 1 0 0-5.44 2.72 2.72 0 0 0 0 5.44Z" clip-rule="evenodd"/>
+          </svg>
+          Córdoba, Argentina
+        </span>
+
+        <!-- Redes -->
+        <div class="ml-1 flex items-center gap-2">
+          <a href="#" class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-white/5 ring-1 ring-white/10 hover:bg-white/10 transition">
+            <!-- Mail -->
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-4 w-4">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 7.5v9.75a2.25 2.25 0 0 1-2.25 2.25h-15A2.25 2.25 0 0 1 2.25 17.25V7.5m19.5 0A2.25 2.25 0 0 0 19.5 5.25h-15A2.25 2.25 0 0 0 2.25 7.5m19.5 0-9.75 6.75L2.25 7.5" />
+            </svg>
+          </a>
+          <a href="#" class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-white/5 ring-1 ring-white/10 hover:bg-white/10 transition" aria-label="GitHub">
+            <!-- GitHub -->
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="h-4 w-4" fill="currentColor">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2a10 10 0 0 0-3.162 19.49c.5.093.686-.217.686-.483 0-.237-.009-.866-.013-1.7-2.793.607-3.38-1.346-3.38-1.346-.454-1.154-1.11-1.463-1.11-1.463-.908-.62.069-.607.069-.607 1.004.07 1.532 1.03 1.532 1.03.892 1.53 2.341 1.088 2.91.833.091-.647.35-1.088.636-1.339-2.23-.254-4.574-1.115-4.574-4.963 0-1.096.39-1.992 1.029-2.693-.103-.254-.446-1.275.098-2.657 0 0 .84-.269 2.75 1.028A9.564 9.564 0 0 1 12 6.844a9.56 9.56 0 0 1 2.504.337c1.91-1.297 2.748-1.028 2.748-1.028.545 1.382.202 2.403.1 2.657.64.701 1.028 1.597 1.028 2.693 0 3.858-2.348 4.707-4.585 4.957.36.31.681.92.681 1.855 0 1.338-.012 2.417-.012 2.746 0 .268.183.58.69.481A10 10 0 0 0 12 2Z"/>
+            </svg>
+          </a>
+          <a href="#" class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-white/5 ring-1 ring-white/10 hover:bg-white/10 transition" aria-label="LinkedIn">
+            <!-- LinkedIn -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-4 w-4">
+              <path d="M4.98 3.5a2.25 2.25 0 1 0 0 4.5 2.25 2.25 0 0 0 0-4.5ZM3.25 9h3.46v11.5H3.25V9Zm6.02 0h3.31v1.58h.05c.46-.87 1.6-1.79 3.29-1.79 3.52 0 4.17 2.19 4.17 5.05v6.66h-3.46v-5.91c0-1.41-.03-3.22-1.96-3.22-1.96 0-2.26 1.53-2.26 3.12v6.01H9.27V9Z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Avatar -->
+    <div class="shrink-0">
+      <div class="h-20 w-20 md:h-24 md:w-24 rounded-full ring-2 ring-white/10 p-1 bg-gradient-to-tr from-indigo-500/40 to-emerald-400/40">
+        <div class="h-full w-full rounded-full bg-neutral-900/70 grid place-items-center text-lg font-semibold">FM</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tabs -->
+  <nav class="mt-8 border-b border-white/10">
+    <ul class="flex flex-wrap gap-6 text-sm text-neutral-300/80">
+      <li>
+        <a
+          routerLink="/sobre-mi"
+          [routerLinkActiveOptions]="{ exact: true }"
+          routerLinkActive="border-b-2 border-indigo-500 text-neutral-100"
+          class="inline-flex py-3 hover:text-neutral-100"
+          >Sobre mí</a
+        >
+      </li>
+      <li>
+        <a
+          routerLink="/educacion"
+          routerLinkActive="border-b-2 border-indigo-500 text-neutral-100"
+          class="inline-flex py-3 hover:text-neutral-100"
+          >Educación</a
+        >
+      </li>
+      <li>
+        <h3
+          routerLink="/experiencia"
+          routerLinkActive="active border-b-2 border-indigo-500 text-neutral-100"
+          tabindex="0"
+          class="inline-flex py-3 hover:text-neutral-100 cursor-pointer"
+        >
+          Experiencia
+        </h3>
+      </li>
+      <li><a href="#proyectos" class="inline-flex py-3 hover:text-neutral-100">Proyectos</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="max-w-4xl mx-auto px-6">
+  <!-- Sobre mí -->
+  <section id="sobre-mi" class="py-8">
+    <h2 class="text-2xl font-semibold">Sobre mí</h2>
+    <div class="mt-4 space-y-4 leading-relaxed text-neutral-300">
+      <p>
+        Hola, soy Gabriel Federico Mamani Ubeid, un desarrollador Frontend con experiencia en la creación de
+        aplicaciones web modernas y responsivas.
+      </p>
+    </div>
+    <div class="mt-8 h-px bg-gradient-to-r from-white/10 to-transparent"></div>
+  </section>
+
+  <!-- Tecnologías -->
+  <section class="py-8">
+    <h3 class="text-xl font-semibold text-center">Algunas tecnologías que conozco:</h3>
+    <ul class="mt-6 grid grid-cols-3 sm:grid-cols-6 gap-6 text-center">
+      <li class="group">
+        <div class="mx-auto h-14 w-14 grid place-items-center rounded-xl bg-white/5 ring-1 ring-white/10 group-hover:bg-white/10 transition">
+          <img src="/icons/html.svg" alt="HTML" class="h-8 w-8" />
+        </div>
+        <p class="mt-2 text-sm text-neutral-300">HTML</p>
+      </li>
+      <li class="group">
+        <div class="mx-auto h-14 w-14 grid place-items-center rounded-xl bg-white/5 ring-1 ring-white/10 group-hover:bg-white/10 transition">
+           <img src="/icons/css.svg" alt="CSS" class="h-8 w-8" />
+        </div>
+        <p class="mt-2 text-sm text-neutral-300">CSS</p>
+      </li>
+      <li class="group">
+        <div class="mx-auto h-14 w-14 grid place-items-center rounded-xl bg-white/5 ring-1 ring-white/10 group-hover:bg-white/10 transition">
+           <img src="/icons/ts.svg" alt="TypeScript" class="h-8 w-8" />
+        </div>
+        <p class="mt-2 text-sm text-neutral-300">TypeScript</p>
+      </li>
+      <li class="group">
+        <div class="mx-auto h-14 w-14 grid place-items-center rounded-xl bg-white/5 ring-1 ring-white/10 group-hover:bg-white/10 transition">
+           <img src="/icons/angular.svg" alt="Angular" class="h-8 w-8" />
+        </div>
+        <p class="mt-2 text-sm text-neutral-300">Angular</p>
+      </li>
+      <li class="group">
+        <div class="mx-auto h-14 w-14 grid place-items-center rounded-xl bg-white/5 ring-1 ring-white/10 group-hover:bg-white/10 transition">
+           <img src="/icons/mongo.svg" alt="MongoDB" class="h-8 w-8" />
+        </div>
+        <p class="mt-2 text-sm text-neutral-300">MongoDB</p>
+      </li>
+      <li class="group">
+        <div class="mx-auto h-14 w-14 grid place-items-center rounded-xl bg-white/5 ring-1 ring-white/10 group-hover:bg-white/10 transition">
+           <img src="/icons/git.svg" alt="Git" class="h-8 w-8" />
+        </div>
+        <p class="mt-2 text-sm text-neutral-300">Git</p>
+      </li>
+      <li class="group">
+        <div class="mx-auto h-14 w-14 grid place-items-center rounded-xl bg-white/5 ring-1 ring-white/10 group-hover:bg-white/10 transition">
+           <img src="/icons/github.svg" alt="GitHub" class="h-8 w-8" />
+        </div>
+        <p class="mt-2 text-sm text-neutral-300">GitHub</p>
+      </li>
+       <li class="group">
+        <div class="mx-auto h-14 w-14 grid place-items-center rounded-xl bg-white/5 ring-1 ring-white/10 group-hover:bg-white/10 transition">
+           <img src="/icons/tailwind.svg" alt="Tailwind CSS" class="h-8 w-8" />
+        </div>
+        <p class="mt-2 text-sm text-neutral-300">Tailwind CSS</p>
+      </li>
+       <li class="group">
+        <div class="mx-auto h-14 w-14 grid place-items-center rounded-xl bg-white/5 ring-1 ring-white/10 group-hover:bg-white/10 transition">
+           <img src="/icons/boot.svg" alt="Bootstrap" class="h-8 w-8" />
+        </div>
+        <p class="mt-2 text-sm text-neutral-300">Bootstrap</p>
+      </li>
+    </ul>
+  </section>
+</main>
